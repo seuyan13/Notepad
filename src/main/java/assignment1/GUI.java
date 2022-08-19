@@ -7,8 +7,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.lang.*;
 import java.util.Random;
-
-import javax.swing.*;
 import com.itextpdf.*;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -16,15 +14,17 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfDocument;
 import com.itextpdf.text.pdf.PdfWriter;
 
+import javax.swing.*;
+import java.io.*;
 
 public class GUI implements ActionListener{
 	JFrame window;
 	JTextArea textArea;
 	JScrollPane scrollPane;
 	JMenuBar menuBar;
-	JMenu menuFile, menuEdit, menuHelp, menuPrint;
+	JMenu menuFile, menuEdit, menuHelp, menuPrint,file, search;
 	JMenuItem
-	iNew, iOpen, iSave, iSearch, iSaveAs,iPrint, //items for File menu
+	add, open, save, exit, iSearch, iSaveAs,iPrint, //items for File menu
 	iSelect, iCopy, iPaste, iCut,	// items for Edit menu
 	iAbout;	// items for help menu 
 	GUI()
@@ -58,7 +58,7 @@ public class GUI implements ActionListener{
 		window.setSize(800,600);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
+
 	public void createTextArea() {
 		textArea = new JTextArea();
 		scrollPane = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -81,6 +81,22 @@ public class GUI implements ActionListener{
 	}
 	
 	public void createFileItem() {
+		add = new JMenuItem("New");
+		add.addActionListener(this);
+		menuFile.add(add);
+		
+		open=new JMenuItem("Open");
+		open.addActionListener(this);
+		menuFile.add(open);
+		
+		save=new JMenuItem("Save");
+		save.addActionListener(this);
+		menuFile.add(save);
+		
+		exit=new JMenuItem("Exit");
+		exit.addActionListener(this);
+		menuFile.add(exit);
+		
 		iSaveAs = new JMenuItem("save as PDF");
 		iSaveAs.addActionListener(this);
 		menuFile.add(iSaveAs);
@@ -120,7 +136,7 @@ public class GUI implements ActionListener{
 		if ( item == iSaveAs ) {
 			String text = textArea.getText();
 			Document doc = new Document();
-			File file = new File("C:\\Users\\MyName\\filename.Pdf"); //file path here
+			File file = new File("C:\\Users\\File_Path_Here\\File_Name_Here.Pdf"); //file path here
 			try {
 				PdfWriter.getInstance(doc, new FileOutputStream(file));
 				doc.open();
@@ -144,5 +160,85 @@ public class GUI implements ActionListener{
 		else if ( item == iCut ) {
 			textArea.cut();
 		}
+		else if (item == add) {
+			new GUI();
+		}
+		else if  (item == open) {
+			OpenDocument();
+		}
+		else if (item == save) {
+			SaveDocument();
+		}
+	}
+	
+	boolean saved = true;
+	boolean newFileFlag = true;
+	String fileName=new String("Untitled");
+	File fileRef=new File(fileName);
+	JFileChooser chooser=new JFileChooser();
+
+	public void OpenDocument(){ //open file from computer
+		int i=chooser.showOpenDialog(this.window);
+		if(i==JFileChooser.APPROVE_OPTION){
+			File f=chooser.getSelectedFile();
+			String filepath=f.getPath();
+			fileName=f.getName();
+			try{
+				BufferedReader br=new BufferedReader(new FileReader(filepath));
+				String s1="",s2="";
+				while((s1=br.readLine())!=null){
+					s2+=s1+"\n";
+				}
+				textArea.setText(s2);
+				br.close();
+			}catch (Exception ex) {ex.printStackTrace();  }
+		}
+		newFileFlag=false;
+		window.setTitle(fileName + " - " + "159251_assignment 1_TextEditor");
+	}
+
+	public void SaveDocument() {//save current file
+		if(!newFileFlag)
+		{
+			saveFile(fileRef);
+			return;}
+
+		saveAsFile();
+		fileName=chooser.getName(chooser.getSelectedFile());
+		window.setTitle(fileName + " - " + "159251_assignment 1_TextEditor");
+	}
+	void saveFile(File temp)//if file already opened
+	{
+		FileWriter fout=null;
+		try
+		{
+			fout=new FileWriter(temp);
+			fout.write(textArea.getText());
+		}
+		catch(IOException ioe){return;}
+		finally
+		{try{fout.close();}catch(IOException excp){}}
+		newFileFlag=false;
+	}
+	void saveAsFile() {//if new file
+		File temp;
+		chooser.setDialogTitle("Save As...");
+		chooser.setApproveButtonText("Save");
+		chooser.setApproveButtonMnemonic(KeyEvent.VK_S);
+		chooser.setApproveButtonToolTipText("Click to save");
+
+		do {
+			if (chooser.showSaveDialog(this.window) != JFileChooser.APPROVE_OPTION)
+				return;
+			temp = chooser.getSelectedFile();
+			if (!temp.exists()) break;
+			if (JOptionPane.showConfirmDialog(
+					this.window, "<html>" + temp.getPath() + " already exists.<br>Do you want to replace it?<html>",
+					"Save As", JOptionPane.YES_NO_OPTION
+			) == JOptionPane.YES_OPTION)
+				break;
+		} while (true);
+
+		saveFile(temp);
 	}
 }
