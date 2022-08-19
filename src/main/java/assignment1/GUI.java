@@ -37,6 +37,7 @@ public class GUI implements ActionListener{
 		createFileItem();
 		createSCPC();
 		createAbout();
+    createFileMenu();
 
 		LocalDateTime dateTime = LocalDateTime.now();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -170,7 +171,45 @@ public class GUI implements ActionListener{
 			SaveDocument();
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+	public void createFileMenu() {
+		JMenu file, search;
+		JMenuItem add, open, save, exit;
+		JMenuBar mb=new JMenuBar();
+
+		search=new JMenu("Search");
+		file=new JMenu("File");
+
+		add=new JMenuItem("New");
+		open=new JMenuItem("Open");
+		save=new JMenuItem("Save");
+		exit=new JMenuItem("Exit");
+
+		file.add(add); file.add(open); file.add(save); file.add(exit);
+		mb.add(file); mb.add(search);
+
+		add.addActionListener(new ActionListener() { //if New is selected
+			public void actionPerformed(ActionEvent e) {
+				new GUI(); //open new window
+			}
+		});
+		open.addActionListener(new ActionListener() { //if Open is selected
+			public void actionPerformed(ActionEvent e) {
+				OpenDocument();
+			}
+		});
+		save.addActionListener(new ActionListener() { //if Save is selected
+			public void actionPerformed(ActionEvent e) {
+				SaveDocument();
+			}
+		});
+		window.setJMenuBar(mb);
+	}
+
+>>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
 	boolean saved = true;
 	boolean newFileFlag = true;
 	String fileName=new String("Untitled");
@@ -241,4 +280,9 @@ public class GUI implements ActionListener{
 
 		saveFile(temp);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
