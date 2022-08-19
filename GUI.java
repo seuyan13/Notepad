@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 
-public class GUI<saved> {
+public class GUI{
 	JFrame window;
 	JTextArea textArea;
 	JScrollPane scrollPane;
@@ -34,8 +34,8 @@ public class GUI<saved> {
 	}
 
 	public void createFileMenu() {
-		JMenu file, search, view, help;
-		JMenuItem add, open, save, exit, about, print;
+		JMenu file, search;
+		JMenuItem add, open, save, exit;
 		JMenuBar mb=new JMenuBar();
 
 		search=new JMenu("Search");
