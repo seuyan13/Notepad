@@ -31,13 +31,13 @@ public class GUI implements ActionListener{
 	{
 		window = new JFrame();  
         
-        createWindow();
+       		createWindow();
 		createTextArea();
 		createMenuBar();
 		createFileItem();
 		createSCPC();
 		createAbout();
-    createFileMenu();
+    		//createFileMenu();
 
 		LocalDateTime dateTime = LocalDateTime.now();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -170,11 +170,13 @@ public class GUI implements ActionListener{
 		else if (item == save) {
 			SaveDocument();
 		}
+		window.setJMenuBar(mb);
 	}
 <<<<<<< HEAD
 	
 =======
 
+	/*
 	public void createFileMenu() {
 		JMenu file, search;
 		JMenuItem add, open, save, exit;
@@ -208,6 +210,7 @@ public class GUI implements ActionListener{
 		});
 		window.setJMenuBar(mb);
 	}
+	*/
 
 >>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
 	boolean saved = true;
