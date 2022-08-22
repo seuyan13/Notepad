@@ -1,61 +1,30 @@
 package assignment1;
-import java.awt.event.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.lang.*;
-import java.util.Random;
-import com.itextpdf.*;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfDocument;
-import com.itextpdf.text.pdf.PdfWriter;
-
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.*;
-
-public class GUI implements ActionListener{
+import java.util.Locale;
+import javax.swing.text.*;
+public class GUI{
 	JFrame window;
 	JTextArea textArea;
 	JScrollPane scrollPane;
-	JMenuBar menuBar;
-	JMenu menuFile, menuEdit, menuHelp, menuPrint,file, search;
-	JMenuItem
-	add, open, save, exit, iSearch, iSaveAs,iPrint, //items for File menu
-	iSelect, iCopy, iPaste, iCut,	// items for Edit menu
-	iAbout;	// items for help menu 
-	GUI()
-	{
-		window = new JFrame();  
-        
-       		createWindow();
-		createTextArea();
-		createMenuBar();
-		createFileItem();
-		createSCPC();
-		createAbout();
-    		//createFileMenu();
 
-		LocalDateTime dateTime = LocalDateTime.now();
-		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		String formattedDate = dateTime.format(format);
-		window.setTitle(formattedDate);
-
-		window.setVisible(true);
-	}
+	JTextField searchBar;
 
 	public static void main(String[] args) {
 		new GUI();
 	}
 
-	public void createWindow() {
-		LocalDateTime myDateObj = LocalDateTime.now();
-		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		String formattedDate = myDateObj.format(myFormatObj);
+	public GUI() {
+		createWindow();
+		createTextArea();
+		createFileMenu();
+		window.setVisible(true);
+	}
 
+	public void createWindow() {
+		window = new JFrame("159251_assignment 1_TextEditor");
 		window.setSize(800,600);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
@@ -65,133 +34,67 @@ public class GUI implements ActionListener{
 		scrollPane = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		scrollPane.setBorder(BorderFactory.createEmptyBorder());
 		window.add(scrollPane);
-	}
-	
-	public void createMenuBar() {
-		menuBar = new JMenuBar();
-		window.setJMenuBar(menuBar);
-		
-		menuFile = new JMenu("File");
-		menuBar.add(menuFile);
-		
-		menuEdit = new JMenu("Edit");
-		menuBar.add(menuEdit);
-		
-		menuHelp = new JMenu("Help");
-		menuBar.add(menuHelp);
-	}
-	
-	public void createFileItem() {
-		add = new JMenuItem("New");
-		add.addActionListener(this);
-		menuFile.add(add);
-		
-		open=new JMenuItem("Open");
-		open.addActionListener(this);
-		menuFile.add(open);
-		
-		save=new JMenuItem("Save");
-		save.addActionListener(this);
-		menuFile.add(save);
-		
-		exit=new JMenuItem("Exit");
-		exit.addActionListener(this);
-		menuFile.add(exit);
-		
-		iSaveAs = new JMenuItem("save as PDF");
-		iSaveAs.addActionListener(this);
-		menuFile.add(iSaveAs);
-		
-		
-		iPrint = new JMenuItem("print");
-		iPrint.addActionListener(this);
-		menuFile.add(iPrint);
-	}
-	
-	public void createSCPC() {
-		iSelect = new JMenuItem("select all");
-		iSelect.addActionListener(this);
-		menuEdit.add(iSelect);
-		
-		iCopy = new JMenuItem("copy");
-		iCopy.addActionListener(this);
-		menuEdit.add(iCopy);
-		
-		iPaste = new JMenuItem("paste");
-		iPaste.addActionListener(this);
-		menuEdit.add(iPaste);
-		
-		iCut = new JMenuItem("cut");
-		iCut.addActionListener(this);
-		menuEdit.add(iCut);
-	}
-	
-	public void createAbout() {
-		iAbout = new JMenuItem("About");
-		menuHelp.add(iAbout);
+		//window.add(textArea);
 	}
 
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		JMenuItem item = (JMenuItem) e.getSource();
-		if ( item == iSaveAs ) {
-			String text = textArea.getText();
-			Document doc = new Document();
-			File file = new File("C:\\Users\\File_Path_Here\\File_Name_Here.Pdf"); //file path here
-			try {
-				PdfWriter.getInstance(doc, new FileOutputStream(file));
-				doc.open();
-				doc.add(new Paragraph(text));
-				System.out.println(file + " file created successfully.");
-			} catch (DocumentException | FileNotFoundException ex) {
-				ex.printStackTrace();
-			} finally {
-				doc.close();
+	public void search() throws BadLocationException {
+
+		String text = textArea.getText().toUpperCase();
+		String word = searchBar.getText().toUpperCase();
+		int Tsize = text.length();
+		int Wsize = word.length();
+		boolean match;
+		textArea.getHighlighter().removeAllHighlights();
+		if(Wsize==0){return;}
+		for(int i=0;i<Tsize;i++){
+			match=false;
+
+			if(text.charAt(i) == word.charAt(0)){
+				match=true;
+				for(int n=0;n<Wsize;n++){
+					if (text.charAt(i + n) != word.charAt(n)) {
+						match = false;
+						break;
+					}
+				}
+				if(match){
+					textArea.getHighlighter().addHighlight(i,(i+Wsize), new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
+				}
 			}
 		}
-		else if ( item == iSelect ) {
-			textArea.selectAll();
-		}
-		else if ( item == iCopy ) {
-			textArea.copy();
-		}
-		else if ( item == iPaste ) {
-			textArea.paste();
-		}
-		else if ( item == iCut ) {
-			textArea.cut();
-		}
-		else if (item == add) {
-			new GUI();
-		}
-		else if  (item == open) {
-			OpenDocument();
-		}
-		else if (item == save) {
-			SaveDocument();
-		}
-		window.setJMenuBar(mb);
 	}
-<<<<<<< HEAD
-	
-=======
 
-	/*
 	public void createFileMenu() {
-		JMenu file, search;
+		JMenu file;
 		JMenuItem add, open, save, exit;
 		JMenuBar mb=new JMenuBar();
 
-		search=new JMenu("Search");
 		file=new JMenu("File");
-
+		searchBar=new JTextField();
 		add=new JMenuItem("New");
 		open=new JMenuItem("Open");
 		save=new JMenuItem("Save");
 		exit=new JMenuItem("Exit");
 
+		JButton searchButton=new JButton("Search");
+
 		file.add(add); file.add(open); file.add(save); file.add(exit);
-		mb.add(file); mb.add(search);
+		mb.add(file); mb.add(searchButton); mb.add(searchBar);
+
+		searchButton.addActionListener(new ActionListener() { //if searchBar used selected
+			public void actionPerformed(ActionEvent e) {
+				try {
+					search(); //search word
+				} catch (BadLocationException ex) {
+					ex.printStackTrace();
+				}
+			}
+		});
+		exit.addActionListener(new ActionListener() { //if New is selected
+			public void actionPerformed(ActionEvent e) {
+				 System.exit(0);//exit program
+			}
+		});
 
 		add.addActionListener(new ActionListener() { //if New is selected
 			public void actionPerformed(ActionEvent e) {
@@ -210,9 +113,7 @@ public class GUI implements ActionListener{
 		});
 		window.setJMenuBar(mb);
 	}
-	*/
 
->>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
 	boolean saved = true;
 	boolean newFileFlag = true;
 	String fileName=new String("Untitled");
@@ -283,9 +184,5 @@ public class GUI implements ActionListener{
 
 		saveFile(temp);
 	}
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd

@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-08-20T11:51:19.288">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-08-19T15:20:18.661">
 <file name="src/main/java/assignment1/GUI.java">
-<violation beginline="3" endline="3" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.File'
-</violation>
-<violation beginline="3" endline="3" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.File'
-</violation>
-<violation beginline="4" endline="4" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.FileNotFoundException'
-</violation>
-<violation beginline="4" endline="4" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.FileNotFoundException'
-</violation>
-<violation beginline="5" endline="5" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.FileOutputStream'
-</violation>
-<violation beginline="5" endline="5" begincolumn="0" endcolumn="0" rule="DuplicateImports" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#duplicateimports" priority="4">
-DuplicateImports: Avoid duplicate imports such as 'java.io.FileOutputStream'
-</violation>
 <violation beginline="8" endline="8" begincolumn="0" endcolumn="0" rule="DontImportJavaLang" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#dontimportjavalang" priority="4">
 DontImportJavaLang: Avoid importing anything from the package java.lang
 </violation>
@@ -37,59 +19,41 @@ UnusedImports: Unused import 'java.util.Random'
 <violation beginline="9" endline="9" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
 UnusedImports: Unused import 'java.util.Random'
 </violation>
-<violation beginline="10" endline="10" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+<violation beginline="12" endline="12" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
 UnnecessaryImport: Unused import 'com.itextpdf.*'
 </violation>
-<violation beginline="10" endline="10" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+<violation beginline="12" endline="12" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
 UnnecessaryImport: Unused import 'com.itextpdf.*'
 </violation>
-<violation beginline="10" endline="10" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+<violation beginline="12" endline="12" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
 UnusedImports: Unused import 'com.itextpdf.*'
 </violation>
-<violation beginline="10" endline="10" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+<violation beginline="12" endline="12" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
 UnusedImports: Unused import 'com.itextpdf.*'
 </violation>
-<violation beginline="14" endline="14" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+<violation beginline="16" endline="16" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
 UnnecessaryImport: Unused import 'com.itextpdf.text.pdf.PdfDocument'
 </violation>
-<violation beginline="14" endline="14" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+<violation beginline="16" endline="16" begincolumn="0" endcolumn="0" rule="UnnecessaryImport" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
 UnnecessaryImport: Unused import 'com.itextpdf.text.pdf.PdfDocument'
 </violation>
-<violation beginline="14" endline="14" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+<violation beginline="16" endline="16" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
 UnusedImports: Unused import 'com.itextpdf.text.pdf.PdfDocument'
 </violation>
-<violation beginline="14" endline="14" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+<violation beginline="16" endline="16" begincolumn="0" endcolumn="0" rule="UnusedImports" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
 UnusedImports: Unused import 'com.itextpdf.text.pdf.PdfDocument'
 </violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="20" endline="148" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Class comments are required
 </violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="20" endline="148" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Class comments are required
 </violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="ModifiedCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#modifiedcyclomaticcomplexity" priority="3">
-ModifiedCyclomaticComplexity: The class 'GUI' has a Modified Cyclomatic Complexity of 3 (Highest = 10).
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="ModifiedCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#modifiedcyclomaticcomplexity" priority="3">
-ModifiedCyclomaticComplexity: The class 'GUI' has a Modified Cyclomatic Complexity of 3 (Highest = 10).
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="ShortClassName" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+<violation beginline="20" endline="148" begincolumn="0" endcolumn="0" rule="ShortClassName" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
 ShortClassName: Avoid short class names like GUI
 </violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="ShortClassName" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+<violation beginline="20" endline="148" begincolumn="0" endcolumn="0" rule="ShortClassName" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
 ShortClassName: Avoid short class names like GUI
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="StdCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#stdcyclomaticcomplexity" priority="3">
-StdCyclomaticComplexity: The class 'GUI' has a Standard Cyclomatic Complexity of 3 (Highest = 10).
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="StdCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#stdcyclomaticcomplexity" priority="3">
-StdCyclomaticComplexity: The class 'GUI' has a Standard Cyclomatic Complexity of 3 (Highest = 10).
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="TooManyMethods" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
-TooManyMethods: This class has too many methods, consider refactoring it.
-</violation>
-<violation beginline="20" endline="244" begincolumn="0" endcolumn="0" rule="TooManyMethods" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
-TooManyMethods: This class has too many methods, consider refactoring it.
 </violation>
 <violation beginline="21" endline="21" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
@@ -230,10 +194,10 @@ OneDeclarationPerLine: Use one line for each declaration, it enhances code reada
 OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
 </violation>
 <violation beginline="26" endline="29" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the add field if you want a default access modifier
+CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the iNew field if you want a default access modifier
 </violation>
 <violation beginline="26" endline="29" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the add field if you want a default access modifier
+CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the iNew field if you want a default access modifier
 </violation>
 <violation beginline="26" endline="29" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Field comments are required
@@ -252,30 +216,6 @@ OneDeclarationPerLine: Use one line for each declaration, it enhances code reada
 </violation>
 <violation beginline="26" endline="29" begincolumn="0" endcolumn="0" rule="OneDeclarationPerLine" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#onedeclarationperline" priority="1">
 OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
 <violation beginline="27" endline="27" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
@@ -445,551 +385,119 @@ CommentRequired: Public method and constructor comments are required
 <violation beginline="69" endline="81" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="83" endline="108" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="83" endline="92" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="83" endline="108" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="83" endline="92" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="110" endline="126" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="94" endline="110" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="110" endline="126" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="94" endline="110" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="128" endline="131" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="112" endline="115" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="128" endline="131" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="112" endline="115" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="117" endline="147" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="117" endline="147" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 CommentRequired: Public method and constructor comments are required
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="CyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#cyclomaticcomplexity" priority="3">
-CyclomaticComplexity: The method 'actionPerformed(ActionEvent)' has a cyclomatic complexity of 10.
-</violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="CyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#cyclomaticcomplexity" priority="3">
-CyclomaticComplexity: The method 'actionPerformed(ActionEvent)' has a cyclomatic complexity of 10.
-</violation>
-<violation beginline="133" endline="133" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="117" endline="117" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
 </violation>
-<violation beginline="133" endline="133" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="117" endline="117" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="MissingOverride" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="117" endline="147" begincolumn="0" endcolumn="0" rule="MissingOverride" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="MissingOverride" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
+<violation beginline="117" endline="147" begincolumn="0" endcolumn="0" rule="MissingOverride" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#missingoverride" priority="3">
 MissingOverride: The method 'actionPerformed(ActionEvent)' is missing an @Override annotation.
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="ModifiedCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#modifiedcyclomaticcomplexity" priority="3">
-ModifiedCyclomaticComplexity: The method 'actionPerformed' has a Modified Cyclomatic Complexity of 10.
-</violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="ModifiedCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#modifiedcyclomaticcomplexity" priority="3">
-ModifiedCyclomaticComplexity: The method 'actionPerformed' has a Modified Cyclomatic Complexity of 10.
-</violation>
-<violation beginline="133" endline="133" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+<violation beginline="117" endline="117" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
 ShortVariable: Avoid variables with short names like e
 </violation>
-<violation beginline="133" endline="133" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+<violation beginline="117" endline="117" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
 ShortVariable: Avoid variables with short names like e
 </violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="StdCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#stdcyclomaticcomplexity" priority="3">
-StdCyclomaticComplexity: The method 'actionPerformed' has a Standard Cyclomatic Complexity of 10.
-</violation>
-<violation beginline="133" endline="172" begincolumn="0" endcolumn="0" rule="StdCyclomaticComplexity" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_design.html#stdcyclomaticcomplexity" priority="3">
-StdCyclomaticComplexity: The method 'actionPerformed' has a Standard Cyclomatic Complexity of 10.
-</violation>
-<violation beginline="135" endline="135" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="119" endline="119" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'item' could be declared final
 </violation>
-<violation beginline="135" endline="135" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="119" endline="119" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'item' could be declared final
 </violation>
-<violation beginline="136" endline="136" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="120" endline="120" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="136" endline="136" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="120" endline="120" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="137" endline="137" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="121" endline="121" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'text' could be declared final
 </violation>
-<violation beginline="137" endline="137" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="121" endline="121" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'text' could be declared final
 </violation>
-<violation beginline="138" endline="138" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="122" endline="122" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
 </violation>
-<violation beginline="138" endline="138" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="122" endline="122" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
 </violation>
-<violation beginline="139" endline="139" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="123" endline="123" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'file' could be declared final
 </violation>
-<violation beginline="139" endline="139" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="123" endline="123" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 LocalVariableCouldBeFinal: Local variable 'file' could be declared final
 </violation>
-<violation beginline="141" endline="141" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
+<violation beginline="125" endline="125" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
 AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
 </violation>
-<violation beginline="141" endline="141" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
+<violation beginline="125" endline="125" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
 AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
 </violation>
-<violation beginline="144" endline="144" begincolumn="0" endcolumn="0" rule="SystemPrintln" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+<violation beginline="128" endline="128" begincolumn="0" endcolumn="0" rule="SystemPrintln" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
 SystemPrintln: System.out.println is used
 </violation>
-<violation beginline="144" endline="144" begincolumn="0" endcolumn="0" rule="SystemPrintln" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+<violation beginline="128" endline="128" begincolumn="0" endcolumn="0" rule="SystemPrintln" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
 SystemPrintln: System.out.println is used
 </violation>
-<violation beginline="146" endline="146" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
+<violation beginline="130" endline="130" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
 AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
 </violation>
-<violation beginline="146" endline="146" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
+<violation beginline="130" endline="130" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
 AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
 </violation>
-<violation beginline="151" endline="151" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="135" endline="135" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="151" endline="151" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="135" endline="135" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="154" endline="154" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="138" endline="138" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="154" endline="154" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="138" endline="138" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="157" endline="157" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="141" endline="141" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="157" endline="157" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="141" endline="141" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="160" endline="160" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="144" endline="144" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
 </violation>
-<violation beginline="160" endline="160" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="144" endline="144" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="163" endline="163" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="163" endline="163" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="166" endline="166" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="166" endline="166" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="169" endline="169" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="169" endline="169" begincolumn="0" endcolumn="0" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-CompareObjectsWithEquals: Use equals() to compare object references.
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saved field if you want a default access modifier
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saved field if you want a default access modifier
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="174" endline="174" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the newFileFlag field if you want a default access modifier
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the newFileFlag field if you want a default access modifier
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="175" endline="175" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the fileName field if you want a default access modifier
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the fileName field if you want a default access modifier
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="StringInstantiation" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#stringinstantiation" priority="2">
-StringInstantiation: Avoid instantiating String objects; this is usually unnecessary.
-</violation>
-<violation beginline="176" endline="176" begincolumn="0" endcolumn="0" rule="StringInstantiation" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#stringinstantiation" priority="2">
-StringInstantiation: Avoid instantiating String objects; this is usually unnecessary.
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the fileRef field if you want a default access modifier
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the fileRef field if you want a default access modifier
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="177" endline="177" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
-BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the chooser field if you want a default access modifier
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the chooser field if you want a default access modifier
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Field comments are required
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="178" endline="178" begincolumn="0" endcolumn="0" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#fielddeclarationsshouldbeatstartofclass" priority="3">
-FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
-</violation>
-<violation beginline="180" endline="198" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Public method and constructor comments are required
-</violation>
-<violation beginline="180" endline="198" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Public method and constructor comments are required
-</violation>
-<violation beginline="180" endline="198" begincolumn="0" endcolumn="0" rule="MethodNamingConventions" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#methodnamingconventions" priority="1">
-MethodNamingConventions: The instance method name 'OpenDocument' doesn't match '[a-z][a-zA-Z0-9]*'
-</violation>
-<violation beginline="180" endline="198" begincolumn="0" endcolumn="0" rule="MethodNamingConventions" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#methodnamingconventions" priority="1">
-MethodNamingConventions: The instance method name 'OpenDocument' doesn't match '[a-z][a-zA-Z0-9]*'
-</violation>
-<violation beginline="181" endline="181" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'i' could be declared final
-</violation>
-<violation beginline="181" endline="181" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'i' could be declared final
-</violation>
-<violation beginline="181" endline="181" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like i
-</violation>
-<violation beginline="181" endline="181" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like i
-</violation>
-<violation beginline="183" endline="183" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'f' could be declared final
-</violation>
-<violation beginline="183" endline="183" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'f' could be declared final
-</violation>
-<violation beginline="183" endline="183" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like f
-</violation>
-<violation beginline="183" endline="183" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like f
-</violation>
-<violation beginline="184" endline="184" begincolumn="0" endcolumn="0" rule="LawOfDemeter" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
-</violation>
-<violation beginline="184" endline="184" begincolumn="0" endcolumn="0" rule="LawOfDemeter" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
-</violation>
-<violation beginline="184" endline="184" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'filepath' could be declared final
-</violation>
-<violation beginline="184" endline="184" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'filepath' could be declared final
-</violation>
-<violation beginline="185" endline="185" begincolumn="0" endcolumn="0" rule="LawOfDemeter" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
-</violation>
-<violation beginline="185" endline="185" begincolumn="0" endcolumn="0" rule="LawOfDemeter" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
-AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
-AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="CloseResource" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
-CloseResource: Ensure that resources like this FileReader object are closed after use
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="CloseResource" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
-CloseResource: Ensure that resources like this FileReader object are closed after use
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'br' could be declared final
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-LocalVariableCouldBeFinal: Local variable 'br' could be declared final
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like br
-</violation>
-<violation beginline="187" endline="187" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like br
-</violation>
-<violation beginline="188" endline="189" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 's1' (lines '188'-'189').
-</violation>
-<violation beginline="188" endline="189" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 's1' (lines '188'-'189').
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="OneDeclarationPerLine" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#onedeclarationperline" priority="1">
-OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="OneDeclarationPerLine" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#onedeclarationperline" priority="1">
-OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like s1
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like s1
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like s2
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="ShortVariable" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
-ShortVariable: Avoid variables with short names like s2
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="UnusedAssignment" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedassignment" priority="3">
-UnusedAssignment: The initializer for variable 's1' is never used (overwritten on line 189)
-</violation>
-<violation beginline="188" endline="188" begincolumn="0" endcolumn="0" rule="UnusedAssignment" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#unusedassignment" priority="3">
-UnusedAssignment: The initializer for variable 's1' is never used (overwritten on line 189)
-</violation>
-<violation beginline="189" endline="189" begincolumn="0" endcolumn="0" rule="AssignmentInOperand" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_ecmascript_codestyle.html#assignmentinoperand" priority="2">
-AssignmentInOperand: Avoid assignments in operands
-</violation>
-<violation beginline="189" endline="189" begincolumn="0" endcolumn="0" rule="AssignmentInOperand" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_ecmascript_codestyle.html#assignmentinoperand" priority="2">
-AssignmentInOperand: Avoid assignments in operands
-</violation>
-<violation beginline="189" endline="198" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 's1' (lines '189'-'198').
-</violation>
-<violation beginline="189" endline="198" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 's1' (lines '189'-'198').
-</violation>
-<violation beginline="190" endline="190" begincolumn="0" endcolumn="0" rule="UseStringBufferForStringAppends" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
-UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
-</violation>
-<violation beginline="190" endline="190" begincolumn="0" endcolumn="0" rule="UseStringBufferForStringAppends" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#usestringbufferforstringappends" priority="3">
-UseStringBufferForStringAppends: Prefer StringBuilder (non-synchronized) or StringBuffer (synchronized) over += for concatenating strings
-</violation>
-<violation beginline="194" endline="194" begincolumn="0" endcolumn="0" rule="AvoidCatchingGenericException" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
-AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
-</violation>
-<violation beginline="194" endline="194" begincolumn="0" endcolumn="0" rule="AvoidCatchingGenericException" ruleset="Design" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
-AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
-</violation>
-<violation beginline="194" endline="194" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
-AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
-</violation>
-<violation beginline="194" endline="194" begincolumn="0" endcolumn="0" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
-AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
-</violation>
-<violation beginline="200" endline="209" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Public method and constructor comments are required
-</violation>
-<violation beginline="200" endline="209" begincolumn="0" endcolumn="0" rule="CommentRequired" ruleset="Documentation" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
-CommentRequired: Public method and constructor comments are required
-</violation>
-<violation beginline="200" endline="209" begincolumn="0" endcolumn="0" rule="MethodNamingConventions" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#methodnamingconventions" priority="1">
-MethodNamingConventions: The instance method name 'SaveDocument' doesn't match '[a-z][a-zA-Z0-9]*'
-</violation>
-<violation beginline="200" endline="209" begincolumn="0" endcolumn="0" rule="MethodNamingConventions" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#methodnamingconventions" priority="1">
-MethodNamingConventions: The instance method name 'SaveDocument' doesn't match '[a-z][a-zA-Z0-9]*'
-</violation>
-<violation beginline="210" endline="222" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saveFile method if you want a default access modifier
-</violation>
-<violation beginline="210" endline="222" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saveFile method if you want a default access modifier
-</violation>
-<violation beginline="210" endline="222" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="210" endline="222" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="210" endline="210" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
-MethodArgumentCouldBeFinal: Parameter 'temp' is not assigned and could be declared final
-</violation>
-<violation beginline="210" endline="210" begincolumn="0" endcolumn="0" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
-MethodArgumentCouldBeFinal: Parameter 'temp' is not assigned and could be declared final
-</violation>
-<violation beginline="212" endline="215" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fout' (lines '212'-'215').
-</violation>
-<violation beginline="212" endline="215" begincolumn="0" endcolumn="0" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fout' (lines '212'-'215').
-</violation>
-<violation beginline="213" endline="220" begincolumn="0" endcolumn="0" rule="UseTryWithResources" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#usetrywithresources" priority="3">
-UseTryWithResources: Consider using a try-with-resources statement instead of explicitly closing the resource
-</violation>
-<violation beginline="213" endline="220" begincolumn="0" endcolumn="0" rule="UseTryWithResources" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#usetrywithresources" priority="3">
-UseTryWithResources: Consider using a try-with-resources statement instead of explicitly closing the resource
-</violation>
-<violation beginline="215" endline="215" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
-AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
-</violation>
-<violation beginline="215" endline="215" begincolumn="0" endcolumn="0" rule="AvoidFileStream" ruleset="Performance" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
-AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
-</violation>
-<violation beginline="220" endline="220" begincolumn="0" endcolumn="0" rule="EmptyCatchBlock" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_errorprone.html#emptycatchblock" priority="3">
-EmptyCatchBlock: Avoid empty catch blocks
-</violation>
-<violation beginline="220" endline="220" begincolumn="0" endcolumn="0" rule="EmptyCatchBlock" ruleset="Error Prone" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_errorprone.html#emptycatchblock" priority="3">
-EmptyCatchBlock: Avoid empty catch blocks
-</violation>
-<violation beginline="223" endline="243" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saveAsFile method if you want a default access modifier
-</violation>
-<violation beginline="223" endline="243" begincolumn="0" endcolumn="0" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
-CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the saveAsFile method if you want a default access modifier
-</violation>
-<violation beginline="223" endline="243" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="223" endline="243" begincolumn="0" endcolumn="0" rule="DefaultPackage" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
-DefaultPackage: Use explicit scoping instead of the default package private level
-</violation>
-<violation beginline="230" endline="240" begincolumn="0" endcolumn="0" rule="WhileLoopWithLiteralBoolean" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#whileloopwithliteralboolean" priority="3">
-WhileLoopWithLiteralBoolean: The loop can be simplified.
-</violation>
-<violation beginline="230" endline="240" begincolumn="0" endcolumn="0" rule="WhileLoopWithLiteralBoolean" ruleset="Best Practices" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_bestpractices.html#whileloopwithliteralboolean" priority="3">
-WhileLoopWithLiteralBoolean: The loop can be simplified.
-</violation>
-<violation beginline="231" endline="232" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="231" endline="232" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="232" endline="232" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
-</violation>
-<violation beginline="232" endline="232" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
-</violation>
-<violation beginline="234" endline="234" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
-</violation>
-<violation beginline="234" endline="234" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
-</violation>
-<violation beginline="234" endline="234" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="234" endline="234" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="235" endline="239" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="235" endline="239" begincolumn="0" endcolumn="0" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_apex_codestyle.html#ifstmtsmustusebraces" priority="3">
-IfStmtsMustUseBraces: Avoid using if statements without curly braces
-</violation>
-<violation beginline="239" endline="239" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
-</violation>
-<violation beginline="239" endline="239" begincolumn="0" endcolumn="0" rule="ControlStatementBraces" ruleset="Code Style" package="assignment1" class="GUI" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
-ControlStatementBraces: This statement should have braces
 </violation>
 </file>
 </pmd>
