@@ -31,9 +31,9 @@ public class GUI implements ActionListener{
 	JTextArea textArea;
 	JScrollPane scrollPane;
 	JMenuBar menuBar;
-	JMenu menuFile, menuEdit, menuHelp, menuPrint,file, search;
+	JMenu menuFile, menuEdit, menuHelp, menuView;
 	JMenuItem
-	add, open, save, exit, iSearch ,iSaveAs,iPrint, //items for File menu
+	add, open, save, exit, iSearch, iTD ,iSaveAs,iPrint, //items for File menu
 	iSelect, iCopy, iPaste, iCut,	// items for Edit menu
 	iAbout;	// items for help menu 
 	JTextField searchBar;//search
@@ -50,10 +50,7 @@ public class GUI implements ActionListener{
 		createAbout();
 		//createFileMenu();
 
-		LocalDateTime dateTime = LocalDateTime.now();
-		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		String formattedDate = dateTime.format(format);
-		window.setTitle(formattedDate);
+		window.setTitle("159251 - Assignment 1 - Bex, Seungwoon");
 
 		window.setVisible(true);
 	}
@@ -90,6 +87,9 @@ public class GUI implements ActionListener{
 		
 		menuHelp = new JMenu("Help");
 		menuBar.add(menuHelp);
+		
+		menuView = new JMenu("View");
+		menuBar.add(menuView);
 	}
 	
 	public void createFileItem() {
@@ -138,6 +138,10 @@ public class GUI implements ActionListener{
 		iSearch = new JMenuItem("Search");
 		iSearch.addActionListener(this);
 		menuEdit.add(iSearch);
+		
+		iTD =  new JMenuItem("Time/Date");
+		iTD.addActionListener(this);
+		menuEdit.add(iTD);
 	}
 	
 	public void createAbout() {
@@ -165,8 +169,11 @@ public class GUI implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		JMenuItem item = (JMenuItem) e.getSource();
+		LocalDateTime myDateObj = LocalDateTime.now();
+		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+		String formattedDate = myDateObj.format(myFormatObj);
 		
+		JMenuItem item = (JMenuItem) e.getSource();
 		String messageBox = "Student Info (Name - ID): \n" + "1. Bex Ellery - 20013588\n" + "2. Seungwoon Yang - 21008279";
 		
 		if ( item == iSaveAs ) {
@@ -221,6 +228,10 @@ public class GUI implements ActionListener{
 		}
 		else if (item == save) {
 			SaveDocument();
+		}
+		else if(item == iTD) {
+			textArea.setText("");
+			textArea.setText(formattedDate);
 		}
 		else if ( item == iPrint ) {
 			try {
