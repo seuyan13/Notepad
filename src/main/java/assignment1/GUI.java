@@ -1,11 +1,14 @@
 package assignment1;
+import java.awt.Color;
 import java.awt.event.*;
+import java.awt.print.PrinterException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.lang.*;
+import java.util.Arrays;
 import java.util.Random;
 import com.itextpdf.*;
 import com.itextpdf.text.Document;
@@ -15,6 +18,12 @@ import com.itextpdf.text.pdf.PdfDocument;
 import com.itextpdf.text.pdf.PdfWriter;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
+import javax.swing.text.Highlighter.HighlightPainter;
+
 import java.io.*;
 
 public class GUI implements ActionListener{
@@ -27,6 +36,8 @@ public class GUI implements ActionListener{
 	add, open, save, exit, iSearch, iSaveAs,iPrint, //items for File menu
 	iSelect, iCopy, iPaste, iCut,	// items for Edit menu
 	iAbout;	// items for help menu 
+	JTextField searchBar;//search
+	JButton searchButton;
 	GUI()
 	{
 		window = new JFrame();  
@@ -37,7 +48,6 @@ public class GUI implements ActionListener{
 		createFileItem();
 		createSCPC();
 		createAbout();
-    createFileMenu();
 
 		LocalDateTime dateTime = LocalDateTime.now();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -79,6 +89,17 @@ public class GUI implements ActionListener{
 		
 		menuHelp = new JMenu("Help");
 		menuBar.add(menuHelp);
+		
+//		searchButton=new JButton("Search");
+//		searchButton.addActionListener(new ActionListener() { //if searchBar used selected
+//			public void actionPerformed(ActionEvent e) {
+//				try {
+//					search(); //search word
+//				} catch (BadLocationException ex) {
+//					ex.printStackTrace();
+//				}
+//			}
+//		});
 	}
 	
 	public void createFileItem() {
@@ -102,7 +123,6 @@ public class GUI implements ActionListener{
 		iSaveAs.addActionListener(this);
 		menuFile.add(iSaveAs);
 		
-		
 		iPrint = new JMenuItem("print");
 		iPrint.addActionListener(this);
 		menuFile.add(iPrint);
@@ -124,29 +144,68 @@ public class GUI implements ActionListener{
 		iCut = new JMenuItem("cut");
 		iCut.addActionListener(this);
 		menuEdit.add(iCut);
+
+		iSearch = new JMenuItem("Search");
+		iSearch.addActionListener(this);
+		menuEdit.add(iSearch);
 	}
 	
 	public void createAbout() {
 		iAbout = new JMenuItem("About");
+		iAbout.addActionListener(this);
 		menuHelp.add(iAbout);
+	}
+
+	String getSaveFilePath(String title, FileNameExtensionFilter filter) {
+		JFileChooser fileChooser = new JFileChooser();
+		fileChooser.setDialogTitle(title);
+		if ( filter != null ) {
+			fileChooser.setFileFilter(filter);
+		}
+
+		int userSelection = fileChooser.showSaveDialog(this.window);
+
+		if ( userSelection == JFileChooser.APPROVE_OPTION ) {
+			File fileToSave = fileChooser.getSelectedFile();
+			// System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+			return fileToSave.getAbsolutePath();
+		}
+		return null;
 	}
 
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JMenuItem item = (JMenuItem) e.getSource();
+		
+		String messageBox = "Student Info (Name - ID): \n" + "Bex Ellery - 20013588\n" + "Seungwoon Yang - 21008279";
+		
 		if ( item == iSaveAs ) {
-			String text = textArea.getText();
-			Document doc = new Document();
-			File file = new File("C:\\Users\\File_Path_Here\\File_Name_Here.Pdf"); //file path here
-			try {
-				PdfWriter.getInstance(doc, new FileOutputStream(file));
-				doc.open();
-				doc.add(new Paragraph(text));
-				System.out.println(file + " file created successfully.");
-			} catch (DocumentException | FileNotFoundException ex) {
-				ex.printStackTrace();
-			} finally {
-				doc.close();
+			String filePath = getSaveFilePath("Save as PDF",
+					new FileNameExtensionFilter("PDF(Portable Document Format)", "pdf"));
+			if ( filePath != null ) {
+				String text = textArea.getText();
+				Document doc = new Document();
+				// File file = new File("C:\\Users\\File_Path_Here\\File_Name_Here.Pdf"); //file path here
+
+				int lastIndexOf = filePath.lastIndexOf(".");
+				if ( lastIndexOf == -1 ) {
+					// the filename doesn't have file extension, so add '.pdf' as default.
+					filePath += ".pdf";
+				}
+				File file = new File(filePath);
+				try {
+					PdfWriter.getInstance(doc, new FileOutputStream(file));
+					doc.open();
+					doc.add(new Paragraph(text));
+					System.out.println(file + " file created successfully.");
+				} catch (DocumentException | FileNotFoundException ex) {
+					ex.printStackTrace();
+				} finally {
+					doc.close();
+				}
+			}
+			else {
+				System.out.println("'Save as PDF' was canceled or failed.");
 			}
 		}
 		else if ( item == iSelect ) {
@@ -161,6 +220,9 @@ public class GUI implements ActionListener{
 		else if ( item == iCut ) {
 			textArea.cut();
 		}
+		else if (item == iAbout) {
+			JOptionPane.showMessageDialog(null, messageBox);
+		}
 		else if (item == add) {
 			new GUI();
 		}
@@ -170,46 +232,74 @@ public class GUI implements ActionListener{
 		else if (item == save) {
 			SaveDocument();
 		}
+		else if ( item == iPrint ) {
+			try {
+				textArea.print();
+			} catch (PrinterException ex) {
+				throw new RuntimeException(ex);
+			}
+		}
+		else if ( item == iSearch ) {
+			findWord();
+		}
+		window.setJMenuBar(menuBar);
 	}
-<<<<<<< HEAD
 	
-=======
-
-	public void createFileMenu() {
-		JMenu file, search;
-		JMenuItem add, open, save, exit;
-		JMenuBar mb=new JMenuBar();
-
-		search=new JMenu("Search");
-		file=new JMenu("File");
-
-		add=new JMenuItem("New");
-		open=new JMenuItem("Open");
-		save=new JMenuItem("Save");
-		exit=new JMenuItem("Exit");
-
-		file.add(add); file.add(open); file.add(save); file.add(exit);
-		mb.add(file); mb.add(search);
-
-		add.addActionListener(new ActionListener() { //if New is selected
-			public void actionPerformed(ActionEvent e) {
-				new GUI(); //open new window
+	public void search() throws BadLocationException {
+		String text = textArea.getText().toUpperCase();
+		String word = searchBar.getText().toUpperCase();
+		int Tsize = text.length();
+		int Wsize = word.length();
+		boolean match;
+		textArea.getHighlighter().removeAllHighlights();
+		if(Wsize==0||Wsize>Tsize){return;}
+		for(int i=0;i<Tsize;i++){
+			match=false;
+			if(text.charAt(i) == word.charAt(0)){
+				match=true;
+				for(int n=0;n<Wsize;n++){
+					if (text.charAt(i + n) != word.charAt(n)) {
+						match = false;
+						break;
+					}
+				}
+				if(match){
+					textArea.getHighlighter().addHighlight(i,(i+Wsize), (HighlightPainter) new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
+				}
 			}
-		});
-		open.addActionListener(new ActionListener() { //if Open is selected
-			public void actionPerformed(ActionEvent e) {
-				OpenDocument();
-			}
-		});
-		save.addActionListener(new ActionListener() { //if Save is selected
-			public void actionPerformed(ActionEvent e) {
-				SaveDocument();
-			}
-		});
-		window.setJMenuBar(mb);
+		}
 	}
 
->>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
+	public void findWord() {
+		String word = (String)JOptionPane.showInputDialog(
+				this.window,
+				"Enter the word you want to find:",
+				"Find Dialog",
+				JOptionPane.PLAIN_MESSAGE,
+				null,
+				null,
+				null);
+
+		Highlighter.HighlightPainter painter =
+				new DefaultHighlighter.DefaultHighlightPainter( Color.cyan );
+
+		String text = textArea.getText();
+		int offset = text.indexOf(word);
+		int length = word.length();
+
+		while ( offset != -1)
+		{
+			try
+			{
+				textArea.getHighlighter().addHighlight(offset, offset + length, painter);
+				offset = text.indexOf(word, offset + 1);
+			}
+			catch(BadLocationException ble) {
+				ble.printStackTrace();
+			}
+		}
+	}
+
 	boolean saved = true;
 	boolean newFileFlag = true;
 	String fileName=new String("Untitled");
@@ -240,7 +330,8 @@ public class GUI implements ActionListener{
 		if(!newFileFlag)
 		{
 			saveFile(fileRef);
-			return;}
+			return;
+		}
 
 		saveAsFile();
 		fileName=chooser.getName(chooser.getSelectedFile());
@@ -265,7 +356,7 @@ public class GUI implements ActionListener{
 		chooser.setApproveButtonText("Save");
 		chooser.setApproveButtonMnemonic(KeyEvent.VK_S);
 		chooser.setApproveButtonToolTipText("Click to save");
-
+		
 		do {
 			if (chooser.showSaveDialog(this.window) != JFileChooser.APPROVE_OPTION)
 				return;
@@ -277,12 +368,7 @@ public class GUI implements ActionListener{
 			) == JOptionPane.YES_OPTION)
 				break;
 		} while (true);
-
+		
 		saveFile(temp);
 	}
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> fd88e1b5a7c559508618202d8840e2b70aae58bd
