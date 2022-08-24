@@ -1,5 +1,9 @@
 package assignment1;
+<<<<<<< HEAD
 import java.awt.Color;
+=======
+import java.awt.*;
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 import java.awt.event.*;
 import java.awt.print.PrinterException;
 import java.io.File;
@@ -18,12 +22,16 @@ import com.itextpdf.text.pdf.PdfDocument;
 import com.itextpdf.text.pdf.PdfWriter;
 
 import javax.swing.*;
+<<<<<<< HEAD
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Highlighter;
 import javax.swing.text.Highlighter.HighlightPainter;
 
+=======
+import javax.swing.text.*;
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 import java.io.*;
 
 public class GUI implements ActionListener{
@@ -33,21 +41,34 @@ public class GUI implements ActionListener{
 	JMenuBar menuBar;
 	JMenu menuFile, menuEdit, menuHelp, menuPrint,file, search;
 	JMenuItem
+<<<<<<< HEAD
 	add, open, save, exit, iSearch, iSaveAs,iPrint, //items for File menu
 	iSelect, iCopy, iPaste, iCut,	// items for Edit menu
 	iAbout;	// items for help menu 
 	JTextField searchBar;//search
 	JButton searchButton;
+=======
+			add, open, save, exit, iSearch, iSaveAs,iPrint, //items for File menu
+			iSelect, iCopy, iPaste, iCut,	// items for Edit menu
+			iAbout;	// items for help menu
+	JTextField searchBar;//search
+	JButton searchButton;
+
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 	GUI()
 	{
-		window = new JFrame();  
-        
-        createWindow();
+		window = new JFrame();
+
+		createWindow();
 		createTextArea();
 		createMenuBar();
 		createFileItem();
 		createSCPC();
 		createAbout();
+<<<<<<< HEAD
+=======
+		//createFileMenu();
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 
 		LocalDateTime dateTime = LocalDateTime.now();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -76,19 +97,20 @@ public class GUI implements ActionListener{
 		scrollPane.setBorder(BorderFactory.createEmptyBorder());
 		window.add(scrollPane);
 	}
-	
+
 	public void createMenuBar() {
 		menuBar = new JMenuBar();
 		window.setJMenuBar(menuBar);
-		
+
 		menuFile = new JMenu("File");
 		menuBar.add(menuFile);
-		
+
 		menuEdit = new JMenu("Edit");
 		menuBar.add(menuEdit);
-		
+
 		menuHelp = new JMenu("Help");
 		menuBar.add(menuHelp);
+<<<<<<< HEAD
 		
 //		searchButton=new JButton("Search");
 //		searchButton.addActionListener(new ActionListener() { //if searchBar used selected
@@ -100,47 +122,70 @@ public class GUI implements ActionListener{
 //				}
 //			}
 //		});
+=======
+
+		searchButton=new JButton("Search");
+		searchButton.addActionListener(new ActionListener() { //if searchBar used selected
+			public void actionPerformed(ActionEvent e) {
+				try {
+					search(); //search word
+				} catch (BadLocationException ex) {
+					ex.printStackTrace();
+				}
+			}
+		});
+
+		menuBar.add(searchButton);
+
+		searchBar=new JTextField();
+		menuBar.add(searchBar);
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 	}
-	
+
 	public void createFileItem() {
 		add = new JMenuItem("New");
 		add.addActionListener(this);
 		menuFile.add(add);
-		
+
 		open=new JMenuItem("Open");
 		open.addActionListener(this);
 		menuFile.add(open);
-		
+
 		save=new JMenuItem("Save");
 		save.addActionListener(this);
 		menuFile.add(save);
-		
+
 		exit=new JMenuItem("Exit");
 		exit.addActionListener(this);
 		menuFile.add(exit);
-		
+
 		iSaveAs = new JMenuItem("save as PDF");
 		iSaveAs.addActionListener(this);
 		menuFile.add(iSaveAs);
+<<<<<<< HEAD
 		
+=======
+
+
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 		iPrint = new JMenuItem("print");
 		iPrint.addActionListener(this);
 		menuFile.add(iPrint);
 	}
-	
+
 	public void createSCPC() {
 		iSelect = new JMenuItem("select all");
 		iSelect.addActionListener(this);
 		menuEdit.add(iSelect);
-		
+
 		iCopy = new JMenuItem("copy");
 		iCopy.addActionListener(this);
 		menuEdit.add(iCopy);
-		
+
 		iPaste = new JMenuItem("paste");
 		iPaste.addActionListener(this);
 		menuEdit.add(iPaste);
-		
+
 		iCut = new JMenuItem("cut");
 		iCut.addActionListener(this);
 		menuEdit.add(iCut);
@@ -149,7 +194,7 @@ public class GUI implements ActionListener{
 		iSearch.addActionListener(this);
 		menuEdit.add(iSearch);
 	}
-	
+
 	public void createAbout() {
 		iAbout = new JMenuItem("About");
 		iAbout.addActionListener(this);
@@ -232,6 +277,7 @@ public class GUI implements ActionListener{
 		else if (item == save) {
 			SaveDocument();
 		}
+<<<<<<< HEAD
 		else if ( item == iPrint ) {
 			try {
 				textArea.print();
@@ -266,6 +312,52 @@ public class GUI implements ActionListener{
 				if(match){
 					textArea.getHighlighter().addHighlight(i,(i+Wsize), (HighlightPainter) new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
 				}
+=======
+		else if  (item == exit){
+			System.exit(0);
+	   }
+		window.setJMenuBar(menuBar);
+				}
+
+	/*
+	public void createFileMenu() {
+		JMenu file, search;
+		JMenuItem add, open, save, exit;
+		JMenuBar mb=new JMenuBar();
+
+		search=new JMenu("Search");
+		file=new JMenu("File");
+
+		add=new JMenuItem("New");
+		open=new JMenuItem("Open");
+		save=new JMenuItem("Save");
+		exit=new JMenuItem("Exit");
+
+		JButton searchButton=new JButton("Search");//search button
+		searchBar=new JTextField();
+
+		file.add(add); file.add(open); file.add(save); file.add(exit);
+		mb.add(file); mb.add(search);
+
+		searchButton.addActionListener(new ActionListener() { //if searchBar used selected
+			public void actionPerformed(ActionEvent e) {
+				try {
+					search(); //search word
+				} catch (BadLocationException ex) {
+					ex.printStackTrace();
+				}
+			}
+		});
+		exit.addActionListener(new ActionListener() { //if New is selected
+			public void actionPerformed(ActionEvent e) {
+				 System.exit(0);//exit program
+			}
+		});
+
+		add.addActionListener(new ActionListener() { //if New is selected
+			public void actionPerformed(ActionEvent e) {
+				new GUI(); //open new window
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 			}
 		}
 	}
@@ -299,58 +391,99 @@ public class GUI implements ActionListener{
 			}
 		}
 	}
+	*/
 
+<<<<<<< HEAD
 	boolean saved = true;
 	boolean newFileFlag = true;
 	String fileName=new String("Untitled");
 	File fileRef=new File(fileName);
 	JFileChooser chooser=new JFileChooser();
+=======
+public void search() throws BadLocationException {
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 
-	public void OpenDocument(){ //open file from computer
+		String text = textArea.getText().toUpperCase();
+		String word = searchBar.getText().toUpperCase();
+		int Tsize = text.length();
+		int Wsize = word.length();
+		boolean match;
+		textArea.getHighlighter().removeAllHighlights();
+		if(Wsize==0||Wsize>Tsize){return;}
+		for(int i=0;i<Tsize;i++){
+		match=false;
+
+		if(text.charAt(i) == word.charAt(0)){
+			match=true;
+			for(int n=0;n<Wsize;n++){
+				if (text.charAt(i + n) != word.charAt(n)) {
+					match = false;
+					break;
+				}
+			}
+			if(match){
+				textArea.getHighlighter().addHighlight(i,(i+Wsize), new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
+			}
+		}
+		}
+
+}
+		boolean saved = true;
+		boolean newFileFlag = true;
+		String fileName=new String("Untitled");
+		File fileRef=new File(fileName);
+		JFileChooser chooser=new JFileChooser();
+
+public void OpenDocument(){ //open file from computer
 		int i=chooser.showOpenDialog(this.window);
 		if(i==JFileChooser.APPROVE_OPTION){
-			File f=chooser.getSelectedFile();
-			String filepath=f.getPath();
-			fileName=f.getName();
-			try{
-				BufferedReader br=new BufferedReader(new FileReader(filepath));
-				String s1="",s2="";
-				while((s1=br.readLine())!=null){
-					s2+=s1+"\n";
-				}
-				textArea.setText(s2);
-				br.close();
-			}catch (Exception ex) {ex.printStackTrace();  }
+		File f=chooser.getSelectedFile();
+		String filepath=f.getPath();
+		fileName=f.getName();
+		try{
+		BufferedReader br=new BufferedReader(new FileReader(filepath));
+		String s1="",s2="";
+		while((s1=br.readLine())!=null){
+		s2+=s1+"\n";
+		}
+		textArea.setText(s2);
+		br.close();
+		}catch (Exception ex) {ex.printStackTrace();  }
 		}
 		newFileFlag=false;
 		window.setTitle(fileName + " - " + "159251_assignment 1_TextEditor");
-	}
+		}
 
-	public void SaveDocument() {//save current file
+public void SaveDocument() {//save current file
 		if(!newFileFlag)
 		{
+<<<<<<< HEAD
 			saveFile(fileRef);
 			return;
 		}
+=======
+		saveFile(fileRef);
+		return;}
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 
 		saveAsFile();
 		fileName=chooser.getName(chooser.getSelectedFile());
 		window.setTitle(fileName + " - " + "159251_assignment 1_TextEditor");
-	}
-	void saveFile(File temp)//if file already opened
-	{
+		}
+		void saveFile(File temp)//if file already opened
+		{
 		FileWriter fout=null;
 		try
 		{
-			fout=new FileWriter(temp);
-			fout.write(textArea.getText());
+		fout=new FileWriter(temp);
+		fout.write(textArea.getText());
 		}
 		catch(IOException ioe){return;}
 		finally
 		{try{fout.close();}catch(IOException excp){}}
 		newFileFlag=false;
-	}
-	void saveAsFile() {//if new file
+		}
+		void saveAsFile() {//if new file
 		File temp;
 		chooser.setDialogTitle("Save As...");
 		chooser.setApproveButtonText("Save");
@@ -358,17 +491,21 @@ public class GUI implements ActionListener{
 		chooser.setApproveButtonToolTipText("Click to save");
 		
 		do {
-			if (chooser.showSaveDialog(this.window) != JFileChooser.APPROVE_OPTION)
-				return;
-			temp = chooser.getSelectedFile();
-			if (!temp.exists()) break;
-			if (JOptionPane.showConfirmDialog(
-					this.window, "<html>" + temp.getPath() + " already exists.<br>Do you want to replace it?<html>",
-					"Save As", JOptionPane.YES_NO_OPTION
-			) == JOptionPane.YES_OPTION)
-				break;
+		if (chooser.showSaveDialog(this.window) != JFileChooser.APPROVE_OPTION)
+		return;
+		temp = chooser.getSelectedFile();
+		if (!temp.exists()) break;
+		if (JOptionPane.showConfirmDialog(
+		this.window, "<html>" + temp.getPath() + " already exists.<br>Do you want to replace it?<html>",
+		"Save As", JOptionPane.YES_NO_OPTION
+		) == JOptionPane.YES_OPTION)
+		break;
 		} while (true);
 		
 		saveFile(temp);
+<<<<<<< HEAD
 	}
+=======
+		}
+>>>>>>> 05ed4d470c86b7d42304335de54b5b71773e4e58
 }
