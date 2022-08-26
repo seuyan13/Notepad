@@ -1,3 +1,14 @@
+/*
+ * 159251 Software Engineering Design and Construction
+ * Assignment 1 
+ * Due date: 28 August
+ * =======================================
+ * Student Name - Student ID
+ * 	Bex Ellery - 20013588
+ *  Seungwoon Yang - 21008279
+ */
+
+
 package assignment1;
 import java.awt.Color;
 import java.awt.event.*;
@@ -48,7 +59,6 @@ public class GUI implements ActionListener{
 		createFileItem();
 		createSCPC();
 		createAbout();
-		//createFileMenu();
 
 		window.setTitle("159251 - Assignment 1 - Bex, Seungwoon");
 
@@ -59,6 +69,7 @@ public class GUI implements ActionListener{
 		new GUI();
 	}
 
+	//create window
 	public void createWindow() {
 		LocalDateTime myDateObj = LocalDateTime.now();
 		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
@@ -68,6 +79,7 @@ public class GUI implements ActionListener{
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
+	//create text area, enable scroll bar
 	public void createTextArea() {
 		textArea = new JTextArea();
 		scrollPane = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -75,6 +87,7 @@ public class GUI implements ActionListener{
 		window.add(scrollPane);
 	}
 	
+	// create menu bar that has File, Edit, Help, View item
 	public void createMenuBar() {
 		menuBar = new JMenuBar();
 		window.setJMenuBar(menuBar);
@@ -92,6 +105,7 @@ public class GUI implements ActionListener{
 		menuBar.add(menuView);
 	}
 	
+	// File menu has New, Open, Save, Exit, Save as PDF, Print items
 	public void createFileItem() {
 		add = new JMenuItem("New");
 		add.addActionListener(this);
@@ -118,6 +132,7 @@ public class GUI implements ActionListener{
 		menuFile.add(iPrint);
 	}
 	
+	//Edit menu has select all, copy, paste, cut, search, time/date items
 	public void createSCPC() {
 		iSelect = new JMenuItem("select all");
 		iSelect.addActionListener(this);
@@ -144,6 +159,7 @@ public class GUI implements ActionListener{
 		menuEdit.add(iTD);
 	}
 	
+	//Help menu has About item 
 	public void createAbout() {
 		iAbout = new JMenuItem("About");
 		iAbout.addActionListener(this);
@@ -169,13 +185,17 @@ public class GUI implements ActionListener{
 
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		
+		// Time and Date format
 		LocalDateTime myDateObj = LocalDateTime.now();
 		DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 		String formattedDate = myDateObj.format(myFormatObj);
 		
+		//About function displays the popup box with message
 		JMenuItem item = (JMenuItem) e.getSource();
 		String messageBox = "Student Info (Name - ID): \n" + "1. Bex Ellery - 20013588\n" + "2. Seungwoon Yang - 21008279";
 		
+		//Save as PDF function
 		if ( item == iSaveAs ) {
 			String filePath = getSaveFilePath("Save as PDF",
 					new FileNameExtensionFilter("PDF(Portable Document Format)", "pdf"));
@@ -218,7 +238,7 @@ public class GUI implements ActionListener{
 			textArea.cut();
 		}
 		else if (item == iAbout) {
-			JOptionPane.showMessageDialog(null, messageBox);
+			JOptionPane.showMessageDialog(null, messageBox); //PopUp Box
 		}
 		else if (item == add) {
 			new GUI();
@@ -229,6 +249,7 @@ public class GUI implements ActionListener{
 		else if (item == save) {
 			SaveDocument();
 		}
+		// Time and Date
 		else if(item == iTD) {
 			textArea.setText("");
 			textArea.setText(formattedDate);
@@ -245,32 +266,8 @@ public class GUI implements ActionListener{
 		}
 		window.setJMenuBar(menuBar);
 	}
-	
-	public void search() throws BadLocationException {
-		String text = textArea.getText().toUpperCase();
-		String word = searchBar.getText().toUpperCase();
-		int Tsize = text.length();
-		int Wsize = word.length();
-		boolean match;
-		textArea.getHighlighter().removeAllHighlights();
-		if(Wsize==0||Wsize>Tsize){return;}
-		for(int i=0;i<Tsize;i++){
-			match=false;
-			if(text.charAt(i) == word.charAt(0)){
-				match=true;
-				for(int n=0;n<Wsize;n++){
-					if (text.charAt(i + n) != word.charAt(n)) {
-						match = false;
-						break;
-					}
-				}
-				if(match){
-					textArea.getHighlighter().addHighlight(i,(i+Wsize), (HighlightPainter) new DefaultHighlighter.DefaultHighlightPainter(Color.RED));
-				}
-			}
-		}
-	}
 
+	// search Function
 	public void findWord() {
 		String word = (String)JOptionPane.showInputDialog(
 				this.window,
