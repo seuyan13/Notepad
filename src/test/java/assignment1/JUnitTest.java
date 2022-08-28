@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import junit.framework.TestCase;
 import javax.swing.*;
-import javax.lang.*;
+//import javax.lang.*;
 
 import org.junit.Test;
 
