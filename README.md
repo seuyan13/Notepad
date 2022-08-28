@@ -3,4 +3,4 @@
 
 ### Build Text Editor using JAVA
 ### Includes a report file using PMD
-### By Bex and Seungwoon Yang (21008279)
+### By Bex Ellery(20013588) and Seungwoon Yang (21008279)
